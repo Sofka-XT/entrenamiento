@@ -1,0 +1,15 @@
+/home/raul-alzate/IdeaProjects/entrenamiento/domain/src/main/java/co/com/sofkau/entrenamiento/curso/events/CursoCreado.java
+/home/raul-alzate/IdeaProjects/entrenamiento/domain/src/main/java/co/com/sofkau/entrenamiento/curso/Mentoria.java
+/home/raul-alzate/IdeaProjects/entrenamiento/domain/src/main/java/co/com/sofkau/entrenamiento/curso/values/CoachId.java
+/home/raul-alzate/IdeaProjects/entrenamiento/domain/src/main/java/co/com/sofkau/entrenamiento/curso/CursoEventChange.java
+/home/raul-alzate/IdeaProjects/entrenamiento/domain/src/main/java/co/com/sofkau/entrenamiento/curso/values/CursoId.java
+/home/raul-alzate/IdeaProjects/entrenamiento/domain/src/main/java/co/com/sofkau/entrenamiento/curso/values/Directiz.java
+/home/raul-alzate/IdeaProjects/entrenamiento/domain/src/main/java/co/com/sofkau/entrenamiento/curso/Curso.java
+/home/raul-alzate/IdeaProjects/entrenamiento/domain/src/main/java/co/com/sofkau/entrenamiento/curso/Coach.java
+/home/raul-alzate/IdeaProjects/entrenamiento/domain/src/main/java/co/com/sofkau/entrenamiento/curso/events/DirectrizAgregadaAMentoria.java
+/home/raul-alzate/IdeaProjects/entrenamiento/domain/src/main/java/co/com/sofkau/entrenamiento/curso/values/Nombre.java
+/home/raul-alzate/IdeaProjects/entrenamiento/domain/src/main/java/co/com/sofkau/entrenamiento/curso/events/MentoriaCreada.java
+/home/raul-alzate/IdeaProjects/entrenamiento/domain/src/main/java/co/com/sofkau/entrenamiento/curso/values/MentoriaId.java
+/home/raul-alzate/IdeaProjects/entrenamiento/domain/src/main/java/co/com/sofkau/entrenamiento/curso/values/Contenido.java
+/home/raul-alzate/IdeaProjects/entrenamiento/domain/src/main/java/co/com/sofkau/entrenamiento/curso/values/Fecha.java
+/home/raul-alzate/IdeaProjects/entrenamiento/domain/src/main/java/co/com/sofkau/entrenamiento/curso/values/Descripcion.java
