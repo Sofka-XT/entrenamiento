@@ -2,8 +2,8 @@ package co.com.sofkau.entrenamiento.curso.commands;
 
 import co.com.sofka.domain.generic.Command;
 import co.com.sofkau.entrenamiento.curso.values.CursoId;
-import co.com.sofkau.entrenamiento.curso.values.Fecha;
-import co.com.sofkau.entrenamiento.curso.values.Nombre;
+import co.com.sofkau.generic.values.Fecha;
+import co.com.sofkau.generic.values.Nombre;
 
 public class AgregarMentoria extends Command {
     private final CursoId coursoId;

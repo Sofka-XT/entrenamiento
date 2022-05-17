@@ -1,9 +1,9 @@
 package co.com.sofkau.entrenamiento.curso.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.sofkau.entrenamiento.curso.values.Fecha;
+import co.com.sofkau.generic.values.Fecha;
 import co.com.sofkau.entrenamiento.curso.values.MentoriaId;
-import co.com.sofkau.entrenamiento.curso.values.Nombre;
+import co.com.sofkau.generic.values.Nombre;
 
 public class MentoriaCreada extends DomainEvent {
     private final MentoriaId mentoriaId;

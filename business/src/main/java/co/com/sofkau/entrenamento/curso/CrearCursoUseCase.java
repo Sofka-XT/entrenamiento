@@ -11,7 +11,12 @@ public class CrearCursoUseCase extends UseCase<RequestCommand<CrearCurso>, Respo
     public void executeUseCase(RequestCommand<CrearCurso> crearCursoRequestCommand) {
         var command = crearCursoRequestCommand.getCommand();
 
-        var curso = new Curso(command.getCoursoId(), command.getNombre(), command.getDescripcion());
+        var curso = new Curso(
+                command.getCoursoId(),
+                command.getProgramaId(),
+                command.getNombre(),
+                command.getDescripcion()
+        );
 
         emit().onResponse(new ResponseEvents(curso.getUncommittedChanges()));
     }

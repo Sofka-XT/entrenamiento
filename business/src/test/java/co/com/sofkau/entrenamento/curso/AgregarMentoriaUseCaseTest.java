@@ -9,8 +9,9 @@ import co.com.sofkau.entrenamiento.curso.events.CursoCreado;
 import co.com.sofkau.entrenamiento.curso.events.MentoriaCreada;
 import co.com.sofkau.entrenamiento.curso.values.CursoId;
 import co.com.sofkau.entrenamiento.curso.values.Descripcion;
-import co.com.sofkau.entrenamiento.curso.values.Fecha;
-import co.com.sofkau.entrenamiento.curso.values.Nombre;
+import co.com.sofkau.entrenamiento.programa.values.ProgramaId;
+import co.com.sofkau.generic.values.Fecha;
+import co.com.sofkau.generic.values.Nombre;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -22,7 +23,6 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 
 
@@ -38,9 +38,9 @@ class AgregarMentoriaUseCaseTest {
     @Test
     void agregarUnaMentoriaHappyPass(){
         //arrange
-        CursoId coursoId = CursoId.of("ddddd");
-        Nombre nombre = new Nombre("Aprendiendo de casos de usos");
-        Fecha fecha = new Fecha(LocalDateTime.now(), LocalDate.now());
+        var coursoId = CursoId.of("ddddd");
+        var nombre = new Nombre("Aprendiendo de casos de usos");
+        var fecha = new Fecha(LocalDateTime.now(), LocalDate.now());
         var command = new AgregarMentoria( coursoId,  nombre,  fecha);
 
         when(repository.getEventsBy("ddddd")).thenReturn(history());
@@ -60,12 +60,13 @@ class AgregarMentoriaUseCaseTest {
     }
 
     private List<DomainEvent> history() {
-        Nombre nombre = new Nombre("DDD");
-        Descripcion descripcion = new Descripcion("Curso complementario para el training");
+        var nombre = new Nombre("DDD");
+        var programaId = ProgramaId.of("dddd");
+        var descripcion = new Descripcion("Curso complementario para el training");
         var event = new CursoCreado(
                 nombre,
-                descripcion
-        );
+                descripcion,
+                programaId);
         event.setAggregateRootId("xxxxx");
         return List.of(event);
     }
